@@ -1,0 +1,33 @@
+{
+  "inbounds": [
+    {
+      "port": 1080,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "ip": "127.0.0.1"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "http",
+      "settings": {
+        "servers": [
+          {
+            "address": "195.54.160.133",
+            "port": 8080,
+            "users": [
+              {
+                "user": "vpn_proxy66_cactus",
+                "pass": "vpn_proxy66_cactus"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
